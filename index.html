@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripVerse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <!-- nav-start -->
+
+
+    <div class="heading-area">
+        <div class="map-view" id="map"></div>
+
+        <div class="nav-section flex-column">
+            <div class="nav-area flex-row">
+
+                <div class="nav-logo-section">
+                    <li>Tripverse</li>
+                </div>
+
+                <div class="nav-link-section flex-row">
+                    <li class="pages">people</li>
+                    <li class="pages">plan</li>
+                    <li class="pages">ticket</li>
+                </div>
+
+                <div class="nav-search-section">
+                    <i class="fa-solid fa-camera"></i>
+                    <input type="search" placeholder="your fav era..." id="nav-input">
+                </div>
+            </div>
+
+            <div class="nav-heading-section flex-column  ">
+                <h1>Every Journey Begins with <span
+                        style="color: rgb(84, 58, 145); font-family: cursive;">Tripverse</span></h1>
+                <button class="sm-btn btn-p">Plan Your Trip</button>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- nav-end -->
+
+    <div class="hero-section flex-row">
+        <div class="hero-desc flex-column box-p">
+            <p>Tripverse is your all-in-one travel companion — offering tour planning, ticket booking, exclusive
+                discounts, and complete travel management services. You can also connect and plan tours with others,
+                explore safe destinations, and enjoy a smooth, secure travel experience. Discover the world with
+                confidence — only with Tripverse.</p>
+            <button class="btn-p">Plan a Tour Together</button>
+            <div class="tripverse-contact-list flex-row">
+                <li><i class="fa-solid fa-envelope fa-1x"></i></li>
+                <li><i class="fa-solid fa-phone fa-1x"></i></li>
+                <li><i class="fa-solid fa-bell fa-1x"></i></li>
+                <li><i class="fa-solid fa-circle-info fa-1x"></i></li>
+            </div>
+        </div>
+        <div class="hero-img box-p">
+            <div class="img-container">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="start-journey-section flex-row">
+        <h1>Find Your Perfect Travel Match</h1>
+    </div>
+    <div class="find-match-section flex-row box-p">
+        <div class="user-info flex-column">
+            <input type="text" placeholder="type your name" class="input-area">
+            <input type="text" placeholder="type your location for visit" class="input-area">
+            <button class="find-btn btn-p">find match</button>
+
+        </div>
+        <div class="matches box-p">
+            <div class="match-container flex-row">
+                <h2>NO MATCHES FOUND;</h2>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <div class="user-post-section flex-column">
+        <div class="user-post-search">
+            <input type="search" placeholder="search post,people,era.." class="input-area">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="users-post flex-column">
+
+
+
+            <div class="inbox-section flex-row">
+                <div class="inbox sm-btn">inbox<i class="fa-solid fa-comment"></i></div>
+            </div>
+
+            <div class="user-post-info flex-row">
+                <div class="circle-img">
+                    <img src="assets/images/usersOne.jpg" alt="" class="user-imgs">
+                </div>
+                <li>Ethan Walkere</li>
+                <li>
+                    <pre>2 minutes ago</pre>
+                </li>
+                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+            </div>
+            <div class="user-post-desc flex-column box-p">
+                <p class="post-text box-p"> Bali Tour Plan
+                    Hey everyone! I’m planning a trip to Bali soon 🏝️ — if you’re interested, comment your preferred
+                    date and how you’d like to travel (flight/group package etc.). Let’s plan it together and make it an
+                    unforgettable trip! ✈️💫
+                    #BaliTrip #TravelTogether #AdventureTime</p>
+                <div class="user-post-bottom-list flex-row">
+                    <div class="sm-btn"><i class="fa-solid fa-comment"></i>comment</div>
+                    <div class="sm-btn"><i class="fa-solid fa-plus"></i>follow-up</div>
+                    <div class="sm-btn"><i class="fa-solid fa-share"></i>share</div>
+                </div>
+            </div>
+
+            <div class="inbox-section flex-row">
+                <div class="inbox sm-btn">inbox<i class="fa-solid fa-comment"></i></div>
+            </div>
+
+            <div class="user-post-info flex-row">
+                <div class="circle-img">
+                    <img src="assets/images/usersTwo.jpg" alt="" class="user-imgs">
+                </div>
+                <li>Olivia Martinez</li>
+                <li>
+                    <pre>42 minutes ago</pre>
+                </li>
+                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+            </div>
+            <div class="user-post-desc flex-column">
+                <p class="post-text">🌟 Nework Tour! 🌟
+                    Excited to announce a Nework tour coming up! 💼✈️
+                    If you want to join, drop your preferred date and how you’d like to travel. Let’s explore, learn,
+                    and enjoy this journey together! 🌍✨
+
+                    #NeworkTour #TravelWithWork #AdventureAhead #JoinTheJourney</p>
+                <div class="user-post-bottom-list flex-row">
+                    <div class="sm-btn"><i class="fa-solid fa-comment"></i>comment</div>
+                    <div class="sm-btn"><i class="fa-solid fa-plus"></i>follow-up</div>
+                    <div class="sm-btn"><i class="fa-solid fa-share"></i>share</div>
+                </div>
+            </div>
+
+            <div class="inbox-section flex-row">
+                <div class="inbox sm-btn">inbox<i class="fa-solid fa-comment"></i></div>
+            </div>
+            <div class="user-post-info flex-row">
+                <div class="circle-img">
+                    <img src="assets/images/usersThree.jpg" alt="" class="user-imgs">
+                </div>
+                <li>James Carter</li>
+                <li>
+                    <pre>4 Days ago</pre>
+                </li>
+
+                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+            </div>
+            <div class="user-post-desc flex-column">
+                <p class="post-text">Planning an amazing Indonesia tour soon! 🏝️✨
+                    If you’re interested, comment your preferred dates and travel style — let’s explore the islands,
+                    beaches, and culture together! 🌺✈️
+
+                    #IndonesiaTrip #TravelTogether #IslandAdventure #ExploreIndonesia</p>
+
+                <div class="user-post-bottom-list flex-row">
+                    <div class="sm-btn"><i class="fa-solid fa-comment"></i>comment</div>
+                    <div class="sm-btn"><i class="fa-solid fa-plus"></i>follow-up</div>
+                    <div class="sm-btn"><i class="fa-solid fa-share"></i>share</div>
+                </div>
+            </div>
+
+        </div>
+        <button class="lg-button more-find btn-p">More people find!</button>
+
+    </div>
+
+    <div class="adven flex-row">
+        <h1>Your Next Adventure</h1>
+    </div>
+
+
+
+    <div class="tourist-place-section flex-column">
+
+        <div class="card flex-row">
+
+
+            <div class="card-left flex-row">
+                <div class="card-img lg-img  shadow" id="baliIMG">
+                    <button class="visit-btn">visit</button>
+                </div>
+                <div class="card-desc flex-row shadow box-p">
+                    <p><span style="font-weight: bolder;">Bali Beach</span> — A tropical paradise with golden sands,
+                        clear blue water, and
+                        breathtaking sunsets.
+                        Perfect for relaxing, surfing, or just soaking in the island vibes.</p>
+
+                </div>
+            </div>
+
+
+            <div class="card-right flex-row">
+                <div class="card-img md-img shadow" id="temple">
+                    <button class="visit-btn">visit</button>
+                </div>
+                <div class="card-desc flex-row shadow box-p">
+                    <p><span style="font-weight: bolder;">Buddhist Temple</span> — A peaceful place filled with ancient
+                        art, calm surroundings, and
+                        spiritual
+                        vibes. Perfect for those seeking mindfulness and cultural beauty.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class=" card flex-row">
+
+            <div class="card-left flex-row">
+                <div class="card-img sm-img  shadow " id="ahsan">
+                    <button class="visit-btn">visit</button>
+                </div>
+                <div class="card-desc flex-row shadow box-p">
+                    <p><span style="font-weight: bolder;">Ahsan Manzil </span>— Known as the Pink Palace, it’s a
+                        beautiful 19th-century Nawab
+                        residence in Dhaka.
+                        With its grand dome and riverside view, it reflects the rich history and royal elegance of old
+                        Dhaka</p>
+
+                </div>
+            </div>
+
+
+            <div class="card-right flex-row">
+                <div class="card-img lg-img shadow" id="mosque">
+                    <button class="visit-btn">visit</button>
+                </div>
+                <div class="card-desc  flex-row shadow box-p">
+                    <p><span style="font-weight: bolder;">Hagia Sophia</span> — A stunning masterpiece in Istanbul, once
+                        a church, later a mosque,
+                        and now a
+                        museum. Famous for its massive dome and rich history, it reflects the blend of Byzantine and
+                        Ottoman architecture</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card flex-row">
+            <div class="card-left flex-row">
+                <div class="card-img lg-img shadow" id="tokyo">
+                    <button class="visit-btn">visit</button>
+                </div>
+                <div class="card-desc  flex-row shadow box-p">
+                    <p><span style="font-weight: bolder;">Tokyo </span>— A vibrant city where tradition meets
+                        technology. From ancient temples to
+                        neon-lit
+                        streets, Tokyo offers endless energy, culture, and unforgettable experiences.</p>
+
+                </div>
+            </div>
+            <div class="card-right flex-row ">
+                <div class="card-img md-img shadow" id="amber">
+                    <button class="visit-btn">visit</button>
+                </div>
+                <div class="card-desc flex-row shadow box-p">
+                    <p><span style="font-weight: bolder;">Amber Palace</span> — A majestic hilltop fort in Jaipur,
+                        India, known for its golden sandstone walls,
+                        mirror work, and royal courtyards. A perfect blend of history, art, and architecture.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ticket-booking flex-row">
+        <div class="booking-text flex-column">
+            <h2>Travel Made Simple — <span style="color: white;">Book Now !</span></i></h2>
+
+        </div>
+        <div class="ticket-types flex-column">
+            <input type="text" placeholder="type name" class="input-area">
+            <input type="text" placeholder="place" class="input-area">
+            <div class="transport-list flex-row">
+                <li><i class="fa-solid fa-bus fa-2x"></i></li>
+                <li><i class="fa-solid fa-plane fa-2x"></i></li>
+                <li><i class="fa-solid fa-ship fa-2x"></i></li>
+            </div>
+            <button class=" btn-p">Booking Now!</button>
+        </div>
+    </div>
+
+    <div class="footer flex-column">
+
+        <div class="tripverse-contact-list flex-row">
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-whatsapp"></i></li>
+            <li><i class="fa-solid fa-phone-volume"></i></li>
+
+
+        </div>
+        <h4>© 2025 TripVerse. All rights reserved.
+        </h4>
+        <h5>
+            Developed by Nishat
+        </h5>
+
+
+    </div>
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // map load
+        const map = L.map('map').setView([23.8103, 90.4125], 10);
+
+        // tile layer (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // marker
+        L.marker([23.8103, 90.4125]).addTo(map)
+            .bindPopup('We are here! 📍')
+            .openPopup();
+    </script>
+
+
+</body>
+
+</html>
